@@ -1,48 +1,60 @@
 
 .website-menu {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: auto;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    /* width: auto; */
+    /* height: auto; */
+    /* justify-content: center ; */
     /* border: 2px solid black; */
     /* background-color: white; */
     /* position: fixed;     */
+    margin-top: .3%;
+    
 }
 
 .website-menu button {
+    /* margin-top: 1%; */
     background-color: black;
-    border-radius: 30%;
+    border-radius: 50%;
+    
 }
 
 .navbar {
     /* margin: 1%;  */
     /* padding: .%; */
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-decoration: none;
     color: white;
+    /* margin-right: 1%; */
     /* background-color: black; */
 }
 
 .name {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: black;
     font-size: 1.25em;
-    background: linear-gradient(.75turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-image: linear-gradient(.75turn, #3f87a6, #ebf8e1, #f69d3c);
     font-family: monospace;
     border: 2px solid black;
     /* padding: .5%; */
     margin-bottom: 1%;
-       
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    
 }
 
 .name2 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bolder;
     margin-left: 1%;
     margin-right: 1%;
-    padding: 1%;
+    /* padding: 1%; */
 
 }
 
@@ -100,24 +112,25 @@ body {
 }  */
 
 #personal {
-    /* display: block; */
-    font-size: 48px;
-    border-bottom: 4px solid black;
-    /* border-left: 4px solid black; */
-    /* border-width: 51%; */
-    padding: 2%;
-    margin: 2%;
-    text-align: end;
-    /* margin-left: 50px; */
+    display: flex;
     /* text-align: end; */
+    font-size: 48px;
+    /* float: */
+    width: 18%;
+    border-bottom: 4px solid black;
+    /* border-right: 4px solid black; */
+    padding: 1.5%;
+    margin-top: 5.5%;
+    
 }
 
 #personalQuote {
     /* text-align: center; */
     font-family: cursive;
     /* font-size: 1.25em; */
-    margin-left: 8%;
-    padding-top: 1%;
+    margin-left: 14%;
+    margin-right: 4%;
+    /* padding-top: 1%; */
 }
 
 #education{
@@ -168,12 +181,13 @@ body {
 #ram {
     position: absolute;
 }
+
 #ramPic {
     height: 10vh;
     width: 10vw;
     margin-left: 37vw;
     position: relative;
-    top: -31vh;
+    top: -20vh;
     border-radius: 85%;
     opacity: .2;
     
@@ -190,7 +204,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     /* box-sizing: border-box; */
-    margin-bottom: 8%;
+    margin-bottom: auto;
 
 }
 
@@ -198,3 +212,164 @@ ul {
     font-size: 1rem;
 }
 
+
+
+
+/*  HOME PAGE CSS ABOVE, ABOUT CSS BELOW */
+
+#asideHobbies {
+    float: left;
+    width: 100%;
+    /* display: block; */
+}
+
+#hobbies {
+    /* display: block; */
+    font-size: 48px;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    padding: 2%;
+    margin: 2%;
+}
+
+#hobbyQuote {
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5em;
+}
+
+#paragraphHobbies {
+    text-align: center;
+}
+
+.aboutPic {
+    float: right;
+    width: 15%;
+    height: auto;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+}
+
+#bowling, #bass, #enjoy {
+    text-align: center;
+    border-bottom: 2px solid black
+}
+
+body {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+/* ABOUT CSS ABOVE, PORTFOLIO CSS BELOW */
+
+#project {
+    text-align: center;
+    border: 4px solid black;
+    border-top: none;
+    font-size: 48px;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#projectAside {
+    float: right;
+    font-style: bolder;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    padding: .5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: black;
+}
+
+#projectFlex1 {
+    display: flex;
+    float: left;
+    width: 33%;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    background-color: skyblue;
+}
+
+#projectOne {
+    font-size: 48px;
+    border-bottom: 1px black dashed;
+}
+
+#projectFlex2 {
+    display: flex;
+    float: right;
+    width: 33%;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    background-color: aqua;
+}
+
+#projectTwo {
+    font-size: 48px;
+    border-bottom: 1px black dashed;
+}
+
+#projectFlex3 {
+    display: flex;
+    float: left;
+    width: 33%;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    background-color: sandybrown;
+}
+
+#projectThree {
+    font-size: 48px;
+    border-bottom: 1px black dashed;
+}
+
+#projectFlex4 {
+    display: flex;
+    float: right;
+    width: 33%;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    background-color: #874;
+}
+
+#projectFour {
+    font-size: 48px;
+    border-bottom: 1px black dashed;
+}
+
+.projectPic {
+    height: 20%;
+    width: 20%;
+    border: 1px solid black;
+    
+}
+
+.projectFlex {
+    display: flex;
+    float: right;
+    justify-content: space-evenly;
+}
+
+.flexText {
+    text-align: center;
+    font-style: italic;
+}
+
+#projectP {
+    text-align: center;
+    font-size: .3in;
+}
+
+#projectQuote {
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.25rem;
+}
